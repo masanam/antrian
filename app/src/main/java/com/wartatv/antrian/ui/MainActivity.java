@@ -13,8 +13,8 @@ import android.view.MenuItem;
 import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.wartatv.antrian.R;
 
+import com.wartatv.antrian.R;
 import com.wartatv.antrian.fragments.ChatFragment;
 import com.wartatv.antrian.fragments.HomeFragment;
 import com.wartatv.antrian.fragments.StoreFragment;
