@@ -11,5 +11,5 @@
 
     <!--colros for card-->
     <color name="whiteCardColor">#fff</color>
-
+    <color name="bgBottomNavigation">#fe485a</color>
 </resources>

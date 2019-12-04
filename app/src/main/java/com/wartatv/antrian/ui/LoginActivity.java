@@ -32,23 +32,21 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        LogInButton = (Button)findViewById(R.id.buttonLogin);
+        LogInButton = findViewById(R.id.buttonLogin);
 
-        RegisterButton = (TextView)findViewById(R.id.textRegister);
+        RegisterButton = findViewById(R.id.textRegister);
 
-        Email = (EditText)findViewById(R.id.editTextEmail);
-        Password = (EditText)findViewById(R.id.editTextPassword);
+        Email = findViewById(R.id.editTextEmail);
+        Password = findViewById(R.id.editTextPassword);
 
         //Adding click listener to log in button.
         LogInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                // Calling EditText is empty or no method.
-                CheckEditTextStatus();
-
-                // Calling login method.
-                LoginFunction();
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.enter_b, R.anim.exit_a);
 
             }
         });
