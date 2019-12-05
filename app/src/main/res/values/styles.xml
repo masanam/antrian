@@ -6,22 +6,27 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-    </style>
-
-    <style name="AppTheme.PopupOverlay">
-        <!--        <item name="windowActionBar">false</item>-->
-        <!--        <item name="windowNoTitle">true</item>-->
-    </style>
-
-    <style name="AppTheme.AppBarOverlay">
-        <!--        <item name="windowActionBar">false</item>-->
-        <!--        <item name="windowNoTitle">true</item>-->
     </style>
 
     <style name="AppTheme.NoActionBar">
-<!--        <item name="windowActionBar">true</item>-->
-<!--        <item name="windowNoTitle">true</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.RadioButtonLikeBottomNavigationView" parent="@android:style/Widget.Button">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minHeight">54dip</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@drawable/selector_bottom_navigation_view_text_color</item>
     </style>
 
     <!--designs login_bkogin and register-->
@@ -74,5 +79,6 @@
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_bg</item>
     </style>
+
 
 </resources>
